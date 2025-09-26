@@ -60,7 +60,7 @@ project/
 Raw and processed data are hosted on Google Drive: 📥 IITB Dataset Folder
 
 Within Drive:
-[📥 IITB Dataset Folder]((https://drive.google.com/drive/folders/1fyx2rXwoAhC3iiwoq6tDTyE0XjnjhMYx?usp=sharing))
+[📥 IITB Dataset Folder](https://drive.google.com/drive/folders/1fyx2rXwoAhC3iiwoq6tDTyE0XjnjhMYx?usp=sharing)
 
 IITB/Data/processed contains combined/cleaned data used in this repository.
 
