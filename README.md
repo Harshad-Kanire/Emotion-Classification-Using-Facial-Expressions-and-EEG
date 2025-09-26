@@ -18,31 +18,39 @@ This repository contains all code, data pipelines, models, and notebooks develop
 
 ## 📂 Project Structure  
 
+Based on the project structure you've provided, here is a correct and complete description for your `README.md` file. It consolidates all the information from your screenshots and the project plan into a clear, single format.
+
+-----
+
+### 📂 Project Structure
+
+```
 project/
 ├── data/
-│ ├── EEG_combined.csv # Preprocessed and synchronized EEG features
-│ ├── PSY_combined.csv # Preprocessed and synchronized behavioral data
-│ ├── TIVA_combined.csv # Preprocessed and synchronized Affectiva facial features
-│ ├── WINDOW_combined.csv # Core dataset after sliding window approach
-│ └── df_features_trials.csv # Trial-level dataset with final labels and features
+│   ├── EEG_combined.csv # Preprocessed and synchronized EEG features.
+│   ├── PSY_combined.csv # Preprocessed and synchronized behavioral data.
+│   ├── TIVA_combined.csv # Preprocessed and synchronized Affectiva facial features.
+│   ├── WINDOW_combined.csv # The core dataset after applying the sliding window approach.
+│   └── df_features_trials.csv # A trial-level dataset with final labels and features.
 ├── notebooks/
-│ ├── 01_preprocessing.ipynb # Data cleaning, merging, initial synchronization
-│ ├── 02_feature_engineering.ipynb # Extract and combine multimodal features
-│ ├── 03_modeling_baseline.ipynb # Baseline ML models (RF, XGBoost, LR)
-│ ├── 04_temporal_models.ipynb # BiLSTM with attention
-│ ├── 05_modeling_fusion.ipynb # Fusion techniques (early, late, intermediate)
-│ └── 06_analysis.ipynb # Evaluation, interpretation, visualization
+│   ├── 01_preprocessing.ipynb # Notebook for data cleaning, merging, and initial synchronization.
+│   ├── 02_feature_engineering.ipynb # Notebook for extracting and combining multimodal features.
+│   ├── 03_modeling_baseline.ipynb # Notebook for training and evaluating baseline ML models (RF, XGBoost, LR).
+│   ├── 04_temporal_models.ipynb # Notebook dedicated to implementing and training the BiLSTM with attention.
+│   ├── 05_modeling_fusion.ipynb # Notebook for exploring different fusion techniques (early, late, intermediate).
+│   └── 06_analysis.ipynb # Notebook for in-depth model evaluation, interpretation, and visualization.
 ├── models/
-│ ├── rf_allfeatures.pkl # Random Forest on all features (EEG+TIVA)
-│ ├── xg_allfeatures.pkl # XGBoost on all features
-│ ├── logreg_scalefeatures.pkl # Logistic Regression (scaled features)
-│ ├── rf_eeg.pkl # Random Forest (EEG-only)
-│ ├── rf_tiva_latefusion.pkl # Random Forest (TIVA-only late fusion)
-│ ├── rf_eeg_latefusion.pkl # Random Forest (EEG-only late fusion)
-│ ├── rf_earlyfusion.pkl # Random Forest (early fusion)
-│ ├── mlp_intermidatefusion.pkl # MLP (intermediate fusion)
-│ └── multimodal_bilstm_attention.pth # BiLSTM with attention
-└── README.md
+│   ├── rf_allfeatures.pkl # A trained Scikit-learn Random Forest model on all features.
+│   ├── xg_allfeatures.pkl # A trained Scikit-learn XGBoost model on all features.
+│   ├── logreg_scalefeatures.pkl # A trained Scikit-learn Logistic Regression model on scaled features.
+│   ├── rf_eeg.pkl # A trained Random Forest model using only EEG features.
+│   ├── rf_tiva_latefusion.pkl # A trained Random Forest model using only TIVA features for late fusion.
+│   ├── rf_eeg_latefusion.pkl # A trained Random Forest model using only EEG features for late fusion.
+│   ├── rf_earlyfusion.pkl # A trained Random Forest model on concatenated EEG and TIVA features.
+│   ├── mlp_intermidatefusion.pkl # A trained MLP model for intermediate fusion.
+│   └── multimodal_bilstm_attention.pth # A trained PyTorch BiLSTM model with attention.
+└── README.md # The project's main documentation and overview.
+```
 
 
 ---
