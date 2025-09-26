@@ -133,8 +133,18 @@ Because the `data/` folder is large, you’ll need to download the files and pla
   model.eval()
 
 
-📈 Results (Test Set)
-| Model | Accuracy | Macro F1 | |-------------------------------|----------|----------| | Random Forest (All Features) | 0.61 | 0.28 | | XGBoost (All Features) | 0.64 | 0.27 | | Logistic Regression (Scaled) | 0.41 | 0.25 | | Random Forest (EEG only) | 0.71 | 0.21 | | Random Forest (Early Fusion) | 0.60 | 0.28 | | Random Forest (Late Fusion) | 0.72 | 0.21 | | MLP (Intermediate Fusion) | 0.61 | 0.26 | | BiLSTM + Attention | 0.60 | 0.25 |
+## 📈 Results (Test Set)
+
+| Model                          | Accuracy | Macro F1 |
+|-------------------------------|----------|----------|
+| Random Forest (All Features)  | 0.61     | 0.28     |
+| XGBoost (All Features)        | 0.64     | 0.27     |
+| Logistic Regression (Scaled)  | 0.41     | 0.25     |
+| Random Forest (EEG only)      | 0.71     | 0.21     |
+| Random Forest (Early Fusion)  | 0.60     | 0.28     |
+| Random Forest (Late Fusion)   | 0.72     | 0.21     |
+| MLP (Intermediate Fusion)     | 0.61     | 0.26     |
+| BiLSTM + Attention            | 0.60     | 0.25     |
 
 📝 Notes
 
