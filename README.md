@@ -154,6 +154,97 @@ Because the `data/` folder is large, you’ll need to download the files and pla
 | MLP (Intermediate Fusion)     | 0.61     | 0.26     |
 | BiLSTM + Attention            | 0.60     | 0.25     |
 
+## 📊 Detailed Results per Class 
+
+Below are the **per-class evaluation results** (precision, recall, F1) for each model.  
+
+### 🔹 Random Forest (All Features) – `rf_allfeatures.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.73      | 0.78   | 0.76     | 208     |
+| INCORRECT | 0.27      | 0.22   | 0.24     | 67      |
+| SKIP      | 0.10      | 0.14   | 0.12     | 7       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 8       |
+| **Accuracy** |       |        | **0.61** | 290     |
+
+---
+
+### 🔹 XGBoost (All Features) – `xg_allfeatures.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.74      | 0.81   | 0.78     | 208     |
+| INCORRECT | 0.33      | 0.25   | 0.29     | 67      |
+| SKIP      | 0.00      | 0.00   | 0.00     | 7       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 8       |
+| **Accuracy** |       |        | **0.64** | 290     |
+
+---
+
+### 🔹 Logistic Regression (Scaled Features) – `logreg_scalefeatures.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.69      | 0.47   | 0.56     | 208     |
+| INCORRECT | 0.22      | 0.24   | 0.23     | 67      |
+| SKIP      | 0.10      | 0.43   | 0.16     | 7       |
+| Unknown   | 0.02      | 0.12   | 0.04     | 8       |
+| **Accuracy** |       |        | **0.41** | 290     |
+
+---
+
+### 🔹 Random Forest (EEG Only) – `rf_eeg.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.72      | 1.00   | 0.83     | 208     |
+| INCORRECT | 0.00      | 0.00   | 0.00     | 67      |
+| SKIP      | 0.00      | 0.00   | 0.00     | 7       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 8       |
+| **Accuracy** |       |        | **0.71** | 290     |
+
+---
+
+### 🔹 Random Forest (Early Fusion) – `rf_earlyfusion.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.71      | 0.77   | 0.74     | 208     |
+| INCORRECT | 0.25      | 0.21   | 0.23     | 67      |
+| SKIP      | 0.20      | 0.14   | 0.17     | 7       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 8       |
+| **Accuracy** |       |        | **0.60** | 290     |
+
+---
+
+### 🔹 Random Forest (Late Fusion – EEG+TIVA) – `rf_eeg_latefusion.pkl` + `rf_tiva_latefusion.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.72      | 1.00   | 0.84     | 208     |
+| INCORRECT | 0.00      | 0.00   | 0.00     | 67      |
+| SKIP      | 0.00      | 0.00   | 0.00     | 7       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 8       |
+| **Accuracy** |       |        | **0.72** | 290     |
+
+---
+
+### 🔹 MLP (Intermediate Fusion) – `mlp_intermidatefusion.pkl`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.72      | 0.80   | 0.76     | 208     |
+| INCORRECT | 0.21      | 0.13   | 0.17     | 67      |
+| SKIP      | 0.11      | 0.14   | 0.12     | 7       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 8       |
+| **Accuracy** |       |        | **0.61** | 290     |
+
+---
+
+### 🔹 BiLSTM + Attention – `multimodal_bilstm_attention.pth`
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| CORRECT   | 0.73      | 0.78   | 0.76     | 134     |
+| INCORRECT | 0.26      | 0.22   | 0.24     | 50      |
+| SKIP      | 0.00      | 0.00   | 0.00     | 5       |
+| Unknown   | 0.00      | 0.00   | 0.00     | 4       |
+| **Accuracy** |       |        | **0.60** | 193     |
+
+
 📝 Notes
 
 All .pkl models use joblib.
