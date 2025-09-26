@@ -54,17 +54,18 @@ project/
 
 
 ---
+##🗂 Data Access Raw and processed data are hosted on Google Drive: 📥 IITB Dataset Folder
 
+Within Drive:
+
+IITB/Data/processed contains combined/cleaned data used in this repository.
+
+IITB/project/ contains notebooks and scripts.
 ## 🗂 Data Access  
 
-Raw and processed data are hosted on Google Drive:  
-[📥 IITB Dataset Folder](https://drive.google.com/drive/folders/1t0SB-wcesioeYdzdGwnte3m-vxgmYkCc?usp=sharing)
+Extracted and processed data are hosted on Google Drive:  
+[📥 project Dataset Folder](https://drive.google.com/drive/folders/1t0SB-wcesioeYdzdGwnte3m-vxgmYkCc?usp=sharing)
 
-**Within Drive:**  
-- `IITB/Data/processed` contains combined/cleaned data used in this repository.  
-- `IITB/project` contains notebooks and scripts.  
-
-Because the `data/` folder is large, you’ll need to download the files and place them in the correct directory before running the notebooks.
 
 **How to Use the Data:**  
 1. Download from the Google Drive link above.  
