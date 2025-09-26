@@ -54,7 +54,41 @@ project/
 
 
 ---
-##🗂 Data Access Raw and processed data are hosted on Google Drive: 📥 IITB Dataset Folder
+Based on the screenshots of your Google Drive folders, here is an updated and more accurate README file. It reflects the specific file names and notebooks you have, providing a better representation of your project's current state.
+
+🧠 Multimodal Emotion Recognition on 3D Cognitive Tasks
+This repository contains our full pipeline for emotion classification using EEG + facial expression data recorded from 38 students during mental rotation tasks.
+
+📂 Project Structure
+project/
+├── data/
+│   ├── EEG_combined.csv
+│   ├── PSY_combined.csv
+│   ├── TIVA_combined.csv
+│   ├── WINDOW_combined.csv
+│   └── df_features_trials.csv
+├── notebooks/
+│   ├── 01_preprocessing.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_modeling_baseline.ipynb
+│   ├── 04_temporal_models.ipynb
+│   ├── 05_modeling_fusion.ipynb
+│   └── 06_analysis.ipynb
+├── models/
+│   ├── rf_allfeatures.pkl
+│   ├── xg_allfeatures.pkl
+│   ├── logreg_scalefeatures.pkl
+│   ├── rf_eeg.pkl
+│   ├── rf_tiva_latefusion.pkl
+│   ├── rf_eeg_latefusion.pkl
+│   ├── rf_earlyfusion.pkl
+│   ├── mlp_intermidatefusion.pkl
+│   └── multimodal_bilstm_attention.pth
+└── README.md
+
+
+##🗂 Data Access
+Raw and processed data are hosted on Google Drive: 📥 IITB Dataset Folder
 
 Within Drive:
 
