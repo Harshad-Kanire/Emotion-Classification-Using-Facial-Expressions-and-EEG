@@ -81,7 +81,7 @@ Extracted and processed data are hosted on Google Drive:
 
 ---
 
-## 🚀 Steps Implemented (matching internship tasks)  
+## 🚀 Steps Implemented   
 
 ### 1️⃣ Preprocessing  
 - Combined EEG, TIVA, PSY data across 38 students  
